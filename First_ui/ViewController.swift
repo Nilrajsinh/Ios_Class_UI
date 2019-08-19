@@ -19,8 +19,16 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var LBL: UILabel!
     
+    @IBOutlet weak var NIl: UITextField!
+    
+    
     @IBAction func Btn(_ sender: Any) {
-        LBL.text = "here is the code"
+        
+        if let text = NIl.text
+        {
+            LBL.text = text 
+        }
+        
     }
     
     
